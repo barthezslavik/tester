@@ -4,5 +4,5 @@
 <input type="submit">
 </form>
 
-<p><?= print("Title: {$_POST["title"]}")?></p>
-<p><?= print("Content: {$_POST["content"]}")?></p>
+<p><?= ("Title: {$_POST["title"]}")?></p>
+<p><?= ("Content: {$_POST["content"]}")?></p>

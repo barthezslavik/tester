@@ -2,8 +2,8 @@
 require "lib.php";
 
 $t->follow("http://localhost:81/php/tester/form.php");
-$t->fill("name", "1");
-$t->fill("content1", "2");
-$t->click("submit");
-$t->should_see("1");
-$t->should_see("2");
+$t->fill("title", "some title");
+$t->fill("content", "some content");
+$t->submit();
+$t->should_see("some title");
+$t->should_see("some content");
